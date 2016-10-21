@@ -1,0 +1,2096 @@
+/*  !!! SYMBOLS  FONT  !!!   */
+/*  !!! SYMBOLS  FONT  !!!   */
+/*  !!! SYMBOLS  FONT  !!!   */
+
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'symbols-technomart';
+  src: url('../font/symbols-technomart.eot?45596393');
+  src: url('../font/symbols-technomart.eot?45596393#iefix') format('embedded-opentype'),
+       url('../font/symbols-technomart.woff2?45596393') format('woff2'),
+       url('../font/symbols-technomart.woff?45596393') format('woff'),
+       url('../font/symbols-technomart.ttf?45596393') format('truetype'),
+       url('../font/symbols-technomart.svg?45596393#symbols-technomart') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-technomart';
+    src: url('../font/symbols-technomart.svg?45596393#symbols-technomart') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-technomart";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-left:before { content: '\3c'; } /* '&lt;' */
+.icon-right:before { content: '\3e'; } /* '&gt;' */
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up:before { content: '\2c4'; } /* '˄' */
+.icon-down:before { content: '\2c5'; } /* '˅' */
+.icon-left-big:before { content: '\2190'; } /* '←' */
+.icon-right-big:before { content: '\2192'; } /* '→' */
+.icon-login:before { content: '\2386'; } /* '⎆' */
+.icon-logout:before { content: '\241b'; } /* '␛' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-star:before { content: '\2605'; } /* '★' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-youtube:before { content: '\f39e'; } /* '' */
+.icon-home:before { content: '🏠'; } /* '\1f3e0' */
+.icon-user:before { content: '👨'; } /* '\1f468' */
+.icon-phone:before { content: '📞'; } /* '\1f4de' */
+.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
+.icon-search:before { content: '🔍'; } /* '\1f50d' */
+.icon-bookmark:before { content: '🔖'; } /* '\1f516' */
+
+
+/*  !!! FONTS !!!   */
+/*  !!! FONTS !!!   */
+/*  !!! FONTS !!!   */
+
+
+
+/* font-family: "CuprumRegular"; */
+@font-face {
+    font-family: "CuprumRegular";
+    src: url("../fonts/CuprumRegular/CuprumRegular.eot");
+    src: url("../fonts/CuprumRegular/CuprumRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CuprumRegular/CuprumRegular.woff") format("woff"),
+    url("../fonts/CuprumRegular/CuprumRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "CuprumBold"; */
+@font-face {
+    font-family: "CuprumBold";
+    src: url("../fonts/CuprumBold/CuprumBold.eot");
+    src: url("../fonts/CuprumBold/CuprumBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CuprumBold/CuprumBold.woff") format("woff"),
+    url("../fonts/CuprumBold/CuprumBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "CuprumItalic"; */
+@font-face {
+    font-family: "CuprumItalic";
+    src: url("../fonts/CuprumItalic/CuprumItalic.eot");
+    src: url("../fonts/CuprumItalic/CuprumItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CuprumItalic/CuprumItalic.woff") format("woff"),
+    url("../fonts/CuprumItalic/CuprumItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "CuprumBoldItalic"; */
+@font-face {
+    font-family: "CuprumBoldItalic";
+    src: url("../fonts/CuprumBoldItalic/CuprumBoldItalic.eot");
+    src: url("../fonts/CuprumBoldItalic/CuprumBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CuprumBoldItalic/CuprumBoldItalic.woff") format("woff"),
+    url("../fonts/CuprumBoldItalic/CuprumBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/*  !!! MAIN RULES !!!   */
+/*  !!! MAIN RULES !!!   */
+/*  !!! MAIN RULES !!!   */
+
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+.container {
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+}
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn {
+    display: block;
+}
+input, button {
+    border: none;
+    outline: none;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  !!! HEADER !!!   */
+/*  !!! HEADER !!!   */
+/*  !!! HEADER !!!   */
+
+
+
+header {
+    height: 42px;
+    width: 100%;
+    color: #fff;
+    background-color: #293449;
+    font-size: 0;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+	width: 220px;
+    height: 47px;
+    background-color: #ee3643;
+    border-top: 1px solid #e03643;
+    border-bottom: 5px solid #b52933;
+    font-family: "CuprumBold";
+    font-size: 24px;
+    line-height: 26px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 8px;
+/*    margin-right: 10px;*/
+    vertical-align: top;
+    text-align: center;
+}
+.logo:hover {
+    background-color: #ca2c37;
+    border-bottom-color: #9a212a;
+}
+.logo:active {
+    background-color: #ba2732;
+    border-bottom-color: #8e1e26;
+}
+
+.box-search {
+    display: inline-block;
+    height: 42px;
+    width: 270px;
+    position: relative;
+    vertical-align: top;
+}
+.search {
+    display: inline-block;
+	width: 220px;
+    height: 100%;
+    margin-left: 50px;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 18px;
+    background-color: #293449;
+    color: #fff;
+}
+.search::-webkit-input-placeholder {
+    color: #fff;
+}
+.search::-moz-input-placeholder {
+    color: #fff;
+}
+.search::-ms-input-placeholder {
+    color: #fff;
+}
+.box-search i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    padding-top: 11px;
+    height: 100%;
+    color: #fff;
+    opacity: 0.3;
+    font-size: 17px;
+}
+.box-search:hover i {
+    opacity: 1;
+}
+.search:focus {
+	background-color: #fff;
+    color: #000;
+}
+.search:focus + i {
+    opacity: 1; /* если это убрать, то при отведении курсора становится блеклым (пропадает opasity:1, установленная hover-ом)*/
+    color: #ee3643;
+    background-color: #fff;
+}
+
+
+
+.bookmark {
+    display: inline-block;
+    vertical-align: top;
+	width: 150px;
+    height: 100%;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 18px;
+    padding-top: 12px;
+}
+.bookmark i {
+	font-size: 17px;
+    color: #fff;
+    opacity: 0.3;
+    padding-right: 13px;
+}
+.bookmark:hover {
+	background-color: #161d29;
+}
+.bookmark:hover i {
+	opacity: 1;
+}
+
+.basket {
+    display: inline-block;
+    vertical-align: top;
+	width: 150px;
+    height: 100%;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 18px;
+    padding-top: 12px;
+}
+.basket i {
+	font-size: 17px;
+    color: #fff;
+    opacity: 0.3;
+    padding-right: 13px;
+}
+.basket:hover {
+	background-color: #161d29;
+}
+.basket:hover i {
+	opacity: 1;
+}
+
+.order {
+    display: inline-block;
+    vertical-align: top;
+	width: 150px;
+    height: 100%;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 18px;
+    padding-top: 12px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #66cc33;
+    opacity: 0.8;
+}
+.order:hover {
+	opacity: 1;
+}
+.order:focus {
+    opacity: 0.5;
+}
+
+
+
+
+/*  !!! TOP INFO !!!   */
+/*  !!! TOP INFO !!!   */
+/*  !!! TOP INFO !!!   */
+
+
+/*  INFO  */
+
+.top-info {
+	background-color: #f1f5f7;
+    padding-top: 46px;
+    padding-bottom: 60px;
+/*    margin-bottom: 60px;*/
+}
+
+.top-info .info-enter {
+	font-size: 0;
+    margin-bottom: 45px;
+}
+.info-enter .discr {
+    display: inline-block;
+	width: 300px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-right: 20px;
+    vertical-align: top;
+}
+.discr h2 {
+    font-family: "CuprumItalic";
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+.info-enter .contact {
+    display: inline-block;
+	width: 220px;
+    margin-right: 120px;
+    vertical-align: top;
+}
+.info-enter .phone {
+	width: 220px;
+    height: 45px;
+    border: 3px solid #fff;
+    color: #ee3643;
+    font-size: 21px;
+    padding-top: 8px;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+.info-enter i {
+    color: #000;
+    opacity: 0.5;
+    margin-right: 7px;
+    padding-top: 5px;
+}
+.info-enter span {
+    display: block;
+	font-family: "CuprumRegular";
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    width: 220px;
+    text-align: center;
+}
+
+.info-enter .login {
+    display: inline-block;
+	width: 120px;
+    height: 45px;
+    margin-right: 10px;
+    background-color: #fff;
+    font-family: "CuprumRegular";
+    font-size: 21px;
+    line-height: 18px;
+    padding-top: 13px;
+    padding-left: 15px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.login i {
+    color: #32425c;
+    opacity: 0.3;
+}
+.info-enter .login:hover {
+	color: #ee3643;
+}
+.login:hover i {
+    opacity: 1;
+}
+.info-enter .login:active {
+	color: #cacaca;
+}
+.login:active i {
+	opacity: 0.3;
+}
+
+.info-enter .registr {
+    display: inline-block;
+	width: 150px;
+    height: 45px;
+    background-color: #fff;
+    text-align: center;
+    font-family: "CuprumRegular";
+    font-size: 21px;
+    line-height: 18px;
+    padding-top: 13px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.info-enter .registr:hover {
+	color: #ee3643;
+}
+.info-enter .registr:active {
+	color: #cacaca;
+}
+
+
+
+/*  MAIN MENU  */
+
+
+.main-menu {
+	width: 940px;
+    height: 60px;
+    font-size: 0;
+}
+
+.main-menu ul{
+	width: 100%;
+    height: 100%;
+    background-color: #32425c;
+}
+.main-menu li {
+    display: inline-block;
+    width: 134px;
+    height: 60px;
+}
+.main-menu a {
+    display: block;
+	width: 134px;
+    height: 60px;
+    border-bottom: 5px solid #293449;
+    text-decoration: none;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+.main-menu a:hover{
+	background-color: #293449;
+}
+.main-menu a:active{
+	background-color: #1d2739;
+    color: rgba(255,255,255,0.5);
+}
+
+
+
+
+/*  !!! PROMO  !!!   */
+/*  !!! PROMO  !!!   */
+/*  !!! PROMO  !!!   */
+
+.promo {
+/*    font-size: 0;*/
+    margin-bottom: 53px;
+    margin-top: 60px;
+}
+
+.promo .promo-point {
+    position: relative;
+    display: inline-block;
+    height: 123px;
+    width: 300px;
+    color: #fff;
+    padding-left: 24px;
+    padding-top: 25px;
+    font-family: "CuprumBold";
+    font-size: 24px;
+    line-height: 30px;
+}
+.promo-point a {
+    font-family: "CuprumRegular";
+    font-size: 14px;
+    line-height: 18px;
+	color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 135px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.1);
+    margin-top: 15px;
+    padding-top: 11px;
+    text-align: center;
+}
+.promo-point a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.promo-point a:active {
+	background-color: rgba(0,0,0,0.3);
+}
+.promo .material {
+	background: url(../img/promo-item-sprite.png) no-repeat top right, #f6b22d;
+    background-position: 100% 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.promo .tool {
+	background: url(../img/promo-item-sprite.png) no-repeat top right, #4aafde;
+    background-position: 100% -120px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.promo .tech {
+	background: url(../img/promo-item-sprite.png) no-repeat top right, #cc79d1;
+    background-position: 100% -235px;
+    margin-bottom: 20px;
+}
+.promo .sale {
+	background: url(../img/promo-item-sprite.png) no-repeat top right, #85d179;
+    background-position: 110% -360px;
+    float: left;
+    margin-bottom: 20px;
+}
+.promo .delivery {
+	background: url(../img/promo-item-sprite.png) no-repeat top right, #f6b22d;
+    background-position: 105% -485px;
+    float: left;
+}
+
+.flag {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 59px;
+    overflow: hidden;
+    z-index: 5;
+}
+.flag-new {
+	background: url(../img/flag-new.png) no-repeat top left;
+}
+
+
+
+/*  SLIDER PROMO  (STUPID REALIZATION)  */
+
+
+.promo .slider-promo {
+    position: relative;
+    display: inline-block;
+	float: left;
+    width: 620px;
+    height: 265px;
+    background-color: #f2f6f8;
+    margin-right: 20px;
+    color: #fff;
+    font-family: "CuprumRegular";
+    font-size: 18px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.slider-promo .slide-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/promo-slide-1.jpg) no-repeat top left;
+}
+.slide-item .name{
+    width: 620px;
+    height: 105px;
+	background: url(../img/promo-slide-top-1.png) no-repeat top left;
+    padding-left: 23px;
+    padding-top: 26px;
+}
+
+.slide-item h3 {
+    font-family: "CuprumBold";
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.slide-item .btn {
+    font-family: "CuprumRegular";
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+	font-size: 14px;
+    line-height: 18px;
+    width: 195px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #ee3643;
+    margin-left: 23px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 11px;
+    text-transform: uppercase;
+}
+.slide-item .btn:hover {
+    background-color: #ca2c37;
+}
+.slide-item .btn:active {
+    background-color: #ba2732;
+}
+
+.slider-promo .second {
+/*	display: none;*/
+    background: url(../img/promo-slide-2.jpg) no-repeat top left;
+}
+.slider-promo .slide-item:last-child .name {
+	background: url(../img/promo-slide-top-2.png) no-repeat top left;
+}
+
+.slider-promo .toggle {
+    position: absolute;
+    z-index: 3;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    height: 11px;
+}
+.slider-promo input {
+    display: none;
+}
+.slider-promo .label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.slider-promo .first .slide-1 {
+	background-color: #ee3643;
+}
+.slider-promo .first .slide-2 {
+	background-color: #fff;
+}
+.slider-promo .second .slide-2 {
+	background-color: #ee3643;
+}
+.slider-promo .second .slide-1 {
+	background-color: #fff;
+}
+
+
+@keyframes first-animation {
+    0% { left: 0; z-index: 2; display: block;}
+    40% { left: 0; }
+    50% { left: -620px; }
+    51% { left: -620px; z-index: 1;}
+    52% { left:620px; }
+    90% { left:620px; }
+    100% { left: 0px; }
+}
+@keyframes second-animation {
+    0%  { left: -620px; z-index: 1; display: block; }
+    1% { left: 620px;}
+    40% { left: 620px;  z-index: 2;}
+    50% { left: 0; }
+    90% { left: 0; }
+    100% { left: -620px;}
+}
+
+.display-slide-1 {
+    animation: first-animation 12s linear infinite;
+}
+.display-slide-2 {
+    animation: second-animation 12s linear infinite;
+}
+
+.left-arrow, .right-arrow {
+	position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 113px;
+    cursor: pointer;
+}
+.right-arrow {
+    left: 550px;
+}
+
+
+/* end SLIDER PROMO  (STUPID REALIZATION)  */
+
+
+
+/*  PRODUCT LIST */
+/*  PRODUCT LIST */
+/*  PRODUCT LIST */
+
+
+.products-list {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+}
+
+.products-list .head {
+	width: 100%;
+    height: 89px;
+    background-color: #f7f3ec;
+    margin-bottom: 20px;
+    padding-top: 25px;
+}
+.products-list .head span {
+    display: inline-block;
+    font-family: "CuprumRegular";
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 40px;
+}
+.products-list .head .btn {
+    display: inline-block;
+    font-family: "CuprumRegular";
+    font-size: 14px;
+    line-height: 18px;
+    width: 253px;
+    height: 38px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 12px;
+    text-align: center;
+    float: right;
+    margin-right: 40px;
+    background-color: #ee3643;
+    border-radius: 5px;
+}
+
+.products-list .list-unit {
+    position: relative;
+	display: inline-block;
+    float: left;
+    width: 220px;
+    height: 318px;
+    margin-right: 20px;
+    padding-top: 181px;
+    border: 1px solid #e5e5e5;
+    background: url(../img/index-products.png) no-repeat, top left, #fff;
+    background-position: -8px -30px;
+}
+.products-list .list-unit:nth-child(3) {
+    background-position: -230px -33px;
+}
+.products-list .list-unit:nth-child(4) {
+    background-position: -440px -33px;
+}
+.products-list .list-unit:last-child {
+    margin-right: 0;
+    background-position: -671px -27px;
+}
+
+.products-list h3 {
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "CuprumBold";
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.products-list .list-unit span {
+    display: block;
+    width: 100%;
+    height: 18px;
+    font-family: "CuprumRegular";
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 12px;
+}
+
+.products-list .list-unit .btn {
+    position: relative;
+    display: block;
+    width: 121px;
+    height: 38px;
+    margin: 0 auto;
+    background-color: #ee3643;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-family: "CuprumRegular";
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.products-list .list-unit .btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0px;
+    height: 0px;
+    border: 19px solid #fff;
+    border-left-color: #ee3643;
+}
+
+.list-unit .buy-book {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+	width: 218px;
+    height: 180px;
+    background-color: #fff;
+    padding-top: 45px;
+}
+.buy-book a {
+    display: block;
+    width: 135px;
+    height: 38px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #63a63e;
+    font-family: "CuprumRegular";
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 9px;
+/*    text-align: center;*/
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+}
+.buy-book i {
+	opacity: 0.3;
+    padding-left: 13px;
+    padding-right: 20px;
+}
+.buy-book .to-book {
+    background: #fff;
+    color: #32425c;
+    padding-left: 30px;
+    margin-top: 7px;
+    border-bottom-color: #63a63e;
+}
+.buy-book .to-buy:hover {
+	background-color: #5fbb2d;
+    border: 3px solid #5fbb2d;
+    border-bottom-color: #367315;
+}
+.buy-book .to-buy:hover i {
+    opacity: 1;
+}
+.buy-book .to-buy:active {
+    padding-left: 3px;
+    padding-top: 12px;
+	background-color: #518534;
+    border: none;
+}
+.buy-book .to-buy:active i {
+    opacity: 1;
+}
+.buy-book .to-book:hover {
+    border-color: #32425c;
+}
+.buy-book .to-book:active {
+    opacity: 0.3;
+}
+
+.list-unit:hover .buy-book {
+    display: block;
+}
+.products-list .list-unit:hover {
+	border: none;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+
+
+/*  GOOD IS BOUGHT */
+/*  GOOD IS BOUGHT */
+/*  GOOD IS BOUGHT */
+
+
+.modal-bought {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    margin-top: -140px;
+    left: 50%;
+    margin-left: -310px;
+    width: 620px;
+    min-height: 280px;
+    border-top: 7px solid #ee3643;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 30px #000;
+    box-shadow:  0 0 30px #000;
+}
+
+.modal-bought .alert {
+    width: 100%;
+    height: 163px;
+    font-family: "CuprumRegular";
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 68px;
+    background: url(../img/good-bought.png) no-repeat top left, #fff;
+    background-position: 64px 45px;
+}
+
+.modal-bought .agree {
+    width: 100%;
+    height: 112px;
+    background-color: #f1f1f1;
+    padding-top: 37px;
+    padding-left: 80px;
+}
+.modal-bought .btn {
+    display: inline-block;
+    width: 220px;
+    height: 38px;
+    padding-top: 10px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "CuprumRegular";
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 5px;
+}
+.modal-bought .make-order {
+    color: #fff;
+    background-color: #b52933;
+    margin-right: 20px;
+}
+
+.display-modal-bought {
+    display: block;
+}
+
+
+/*  MAKERS LIST */
+/*  MAKERS LIST */
+/*  MAKERS LIST */
+
+
+.makers-list {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+}
+
+.makers-list .head {
+	width: 100%;
+    height: 89px;
+    background-color: #f7f3ec;
+    margin-bottom: 20px;
+    padding-top: 25px;
+}
+.makers-list .head span {
+    display: inline-block;
+    font-family: "CuprumRegular";
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 40px;
+}
+.makers-list .head .btn {
+    display: inline-block;
+    font-family: "CuprumRegular";
+    font-size: 14px;
+    line-height: 18px;
+    width: 253px;
+    height: 38px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 12px;
+    text-align: center;
+    float: right;
+    margin-right: 40px;
+    background-color: #ee3643;
+    border-radius: 5px;
+}
+
+.makers-list .list-unit {
+    position: relative;
+	display: inline-block;
+    float: left;
+    width: 220px;
+    height: 145px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    background: url(../img/partner-sprite.png) no-repeat, top left, #fff;
+    background-position: 22px 20px;
+}
+.makers-list .list-unit:nth-child(3) {
+    background-position: -210px 19px;
+}
+.makers-list .list-unit:nth-child(4) {
+    background-position: -452px 19px;
+}
+.makers-list .list-unit:nth-child(5) {
+    margin-right: 0;
+    background-position: -692px 19px;
+}
+.makers-list .list-unit:nth-child(6) {
+    background-position: 23px -142px;
+}
+.makers-list .list-unit:nth-child(7) {
+    background-position: -209px -145px;
+}
+.makers-list .list-unit:nth-child(8) {
+    background-position: -454px -148px;
+}
+.makers-list .list-unit:last-child {
+    margin-right: 0;
+    background-position: -694px -146px;
+}
+
+
+
+
+
+/*  SERVICES */
+/*  SERVICES */
+/*  SERVICES */
+
+
+.services {
+	width: 100%;
+    height: 522px;
+    padding-top: 68px;
+    margin-bottom: 80px;
+    background-color: #f2f6f8;
+    overflow: hidden;
+}
+
+.services span {
+    display: block;
+    font-family: "CuprumBold"; 
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.services p {
+    font-family: "CuprumRegular";
+    font-size: 16px;
+    line-height: 23px;
+    width: 460px;
+}
+
+.services .buttons {
+	float: left;
+    margin-top: 70px;
+}
+
+.services .buttons span{
+    width: 240px;
+    height: 61px;
+    font-size: 21px;
+    line-height: 30px;
+    text-transform: none;
+    color: #fff;
+    background-color: #32425c;
+    padding-left: 22px;
+    padding-top: 15px;
+    border-bottom: 1px solid #293449;
+    border-top: 1px solid #405069;
+    cursor: pointer;
+}
+.services .buttons span:first-child {
+    border-top: none;
+}
+.services .buttons span:hover {
+    background-color: #293449;
+}
+
+.services .slider-services {
+	float: right;
+    width: 630px;
+    height: 284px;
+    margin-left: 70px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+.slider-services .slide {
+    display: none;
+    width: 630px;
+    height: 284px;
+    background: url(../img/delivery-slide.png) no-repeat top right;
+/*    background-position: 0 0;*/
+}
+.slider-services .guarantee-slide {
+	background: url(../img/guarantee-slide.png) no-repeat top right;
+}
+.slider-services .credit-slide {
+	background: url(../img/credit-slide.png) no-repeat top right;
+}
+
+.slider-services p {
+    width: 350px;
+}
+
+.services .buttons .active-span {
+    background-color: #fff;
+    color: #32425c;
+    border: none;
+}
+.services .buttons .active-span:hover {
+    background-color: #fff;
+}
+
+.services .display-slide {
+    display: block;
+}
+
+
+
+
+/*  COMPANY */
+/*  COMPANY */
+/*  COMPANY */
+
+
+
+.company {
+	margin-bottom: 85px;
+}
+
+.company span {
+    display: block;
+    font-family: "CuprumBold";
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.company p {
+    font-family: "CuprumRegular";
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 35px;
+}
+.company-info p:last-of-type {
+    margin-bottom: 25px;
+}
+
+.company .company-info {
+	width: 540px;
+    float: left;
+    margin-right: 100px;
+}
+
+.company-info li {
+    position: relative;
+    display: block;
+    font-family: "CuprumBold";
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    padding-left: 36px;
+}
+.company-info li:before {
+    position: absolute;
+    content: "";
+    background-color: #fb565a;
+    width: 25px;
+    height: 2px;
+    top: 50%;
+    margin-top: -2px;
+    left: 0;
+}
+.company-info .btn {
+	display: block;
+    width: 220px;
+    height: 38px;
+    background-color: #ee3643;
+    border-radius: 5px;
+    margin-top: 38px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "CuprumRegular";
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 10px;
+}
+
+
+
+.company .contacts {
+	width: 300px;
+    float: right;
+}
+
+.contacts p {
+    margin-bottom: 40px;
+}
+
+.contacts .map {
+    display: block;
+    width: 300px;
+    height: 157px;
+    background: url(../img/map.jpg) no-repeat top left;
+    margin-bottom: 40px;
+}
+.contacts .btn {
+    display: block;
+    width: 300px;
+    height: 38px;
+    background-color: #ee3643;
+    border-radius: 5px;
+    font-family: "CuprumRegular";
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 10px;
+}
+
+
+
+
+/*  MODAL FORM */
+/*  MODAL FORM */
+/*  MODAL FORM */
+
+
+.modal-form {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    margin-top: -215px;
+    left: 50%;
+    margin-left: -310px;
+	width: 620px;
+    height: 430px;
+    padding-left: 80px;
+    padding-top: 50px;
+    font-family: "CuprumRegular";
+    font-size: 18px;
+    line-height: 18px;
+    border-top: 7px solid #ee3643;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 30px #000;
+    box-shadow: 0 0 30px #000;
+}
+
+.modal-form label {
+    display: inline-block;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.modal-form input {
+    display: inline-block;
+    width: 220px;
+    height: 38px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 13px;
+    border: 2px solid #d7dcde;
+    border-radius: 5px;
+}
+
+.modal-form textarea {
+    width: 460px;
+    height: 114px;
+    padding-top: 10px;
+    padding-left: 13px;
+    margin-bottom: 35px;
+    border: 2px solid #d7dcde;
+    border-radius: 5px;
+    resize: none;
+}
+
+.modal-form .submit {
+	width: 620px;
+    height: 110px;
+    margin-left: -80px;
+    background-color: #f1f1f1;
+}
+
+.modal-form button {
+	width: 220px;
+    height: 38px;
+    border-radius: 5px;
+    margin-top: 37px;
+    font-family: "CuprumRegular";
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.modal-form button[type="submit"] {
+	background-color: #ee3643;
+    color: #fff;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+
+.show-modal-form {
+    display: block;
+}
+
+
+
+
+
+
+/*  BOTTOM INFO */
+/*  BOTTOM INFO */
+/*  BOTTOM INFO */
+
+
+.bottom-info {
+	width: 100%;
+    height: 192px;
+    background-color: #32425c;
+}
+
+.bottom-info .logo-contact {
+	width: 220px;
+    float: left;
+    margin-right: 160px;
+}
+.bottom-info .logo {
+	margin-bottom: 30px;
+}
+.bottom-info p {
+    font-family: "CuprumRegular";
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+.bottom-info .menu {
+    float: right;
+    font-size: 0;
+    margin-bottom: 10px;
+}
+.bottom-info .menu li {
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    padding-top: 30px;
+    margin-right: 15px;
+}
+.bottom-info .menu li:last-child {
+    margin-right: 0;
+}
+.bottom-info .menu a {
+    display: block;
+    width: auto;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.bottom-info .menu li:last-child a {
+    text-align: right;
+}
+.bottom-info .menu li:hover a {
+/*    border-bottom: 1px solid #fff;*/
+    text-decoration: underline;
+}
+.bottom-info .menu li a:active {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.bottom-info .offers {
+    float: right;
+    font-size: 0;
+    padding-left: 30px;
+}
+.bottom-info .offers li {
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    padding-top: 15px;
+    margin-right: 30px;
+}
+.bottom-info .offers li:last-child {
+    width: 140px;
+    margin-right: 0;
+}
+.bottom-info .offers a {
+    display: block;
+    width: auto;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffd180;
+    text-align: center;
+    text-decoration: none;
+}
+.bottom-info .offers li:last-child a {
+    text-align: right;
+}
+.bottom-info .offers li:hover a {
+    text-decoration: underline;
+}
+.bottom-info .offers li a:active {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+
+
+/*  FOOTER */
+/*  FOOTER */
+/*  FOOTER */
+
+
+footer {
+    width: 100%;
+    height: 107px;
+    padding-top: 35px;
+    background-color: #293449;
+}
+
+footer .copyright {
+    float: left;
+    width: 260px;
+    color: #fff;
+    margin-right: 130px;
+    font-family: "CuprumRegular";
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+footer .social {
+    float: left;
+    margin-right: 100px;
+}
+footer .social a {
+    display: inline-block;
+    background-color: #212a3a;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    padding-top: 12px;
+    margin-right: 5px;
+}
+footer .social a:hover {
+    background-color: #ee3643;
+}
+footer .social a:active {
+    background-color: #ee3643;
+}
+
+footer .email {
+    float: left;
+    width: 140px;
+    margin-right: 20px;
+}
+footer .email {
+    font-family: "CuprumRegular";
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+footer .email a {
+    text-decoration: none;
+    color: #ffd180;
+}
+footer .email a:hover {
+    text-decoration: underline;
+}
+footer .email a:active {
+    text-decoration: none;
+    color: #ee3643;
+}
+
+footer .designer {
+    float: left;
+    width: 140px;
+}
+footer .designer {
+    font-family: "CuprumRegular";
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-align: right;
+}
+footer .designer a {
+    text-decoration: none;
+    color: #ffd180;
+}
+footer .designer a:hover {
+    text-decoration: underline;
+}
+footer .designer a:active {
+    text-decoration: none;
+    color: #ee3643;
+}
+
+
+
+
+
+
+
+
+/*    CATALOG   */
+/*    CATALOG   */
+/*    CATALOG   */
+/*    CATALOG   */
+/*    CATALOG   */
+/*    CATALOG   */
+/*    CATALOG   */
+/*    CATALOG   */
+/*    CATALOG   */
+
+
+
+.content-catalog {
+	padding-bottom: 60px;
+}
+
+
+/*    BREAD CRUMBS   */
+/*    BREAD CRUMBS   */
+/*    BREAD CRUMBS   */
+
+
+
+.bread-crumbs {
+	height: 60px;
+    padding-top: 23px;
+}
+.bread-crumbs li {
+	display: inline-block;
+    height: 60px;
+    margin-right: 10px;
+}
+.bread-crumbs a {
+	display: block;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 17px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.bread-crumbs i {
+	opacity: 0.3;
+    padding-left: 5px;
+}
+
+
+
+
+
+/*  CATALOG HEADER  */
+/*  CATALOG HEADER  */
+/*  CATALOG HEADER  */
+
+
+.catalog-header {
+	height: 90px;
+    background-color: #f2f6f8;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.catalog-header h3 {
+	font-family: "CuprumRegular";
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+}
+
+
+
+/*  FILTERS FORM  */
+/*  FILTERS FORM  */
+/*  FILTERS FORM  */
+
+
+.filters {
+    width: 220px;
+    float: left;
+}
+.filters .enter {
+    display: block;
+    width: 100%;
+    height: 38px;
+    background-color: #f7f3ec;
+    border-radius: 5px;
+    padding-left: 18px;
+    padding-top: 10px;
+    font-family: "CuprumRegular";
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.filters i {
+    display: none;
+    float: right;
+    opacity: 0.3;
+    font-size: 25px;
+}
+.filters .display-i {
+    display: block;
+}
+
+.filters form {
+	width: 220px;
+}
+
+.filter-form .name-filter {
+	width: 220px;
+    height: 55px;
+    font-family: "CuprumBold";
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+
+.range-controls {
+    position: relative;
+    width: 220px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #f7f3ec;
+    padding-top: 38px;
+}
+.range-controls .scale {
+    position: relative;
+    width: 180px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #d7dcde;
+}
+.scale .bar {
+    width: 80%;
+    height: 2px;
+	background-color: #00ca74;
+}
+.range-controls .toggle {
+	position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 4px;
+    height: 5px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    background-color: #ababab;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.range-controls .max-toggle {
+	left: 155px;
+}
+
+
+.price-controls {
+	width: 220px;
+    margin-top: 9px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;   
+}
+.price-controls input {
+    display: inline-block;
+    width: 95px;
+	height: 38px;
+    background-color: #f7f3ec;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+.price-controls span {
+	display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 15px;
+    height: 38px;
+    margin: 0 3px;
+}
+.price-controls span:after {
+    content: "";
+	position: absolute;
+    height: 1px;
+    width: 15px;
+    left: 0;    
+    top: 18px;
+    background-color: #6b6b6b;
+}
+
+
+
+.makers-filter {	
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.makers-filter input {
+    display: none;
+}
+.makers-filter label {
+	display: block;
+    width: 220px;
+    height: 25px;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+.makers-filter label i {
+    float: none;
+    color: #c1c1c1;
+}
+.makers-filter label:hover i {
+    color: #888789;
+}
+.makers-filter input:disabled + label {
+    opacity: 0.3;
+}
+.makers-filter input:disabled + label:hover i {
+    color: #c1c1c1;
+    opacity: 0.3;
+}
+.makers-filter .icon-check-off {
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.makers-filter input[type="checkbox"]:checked + label .icon-check-off {
+	display: none;
+}
+.makers-filter input[type="checkbox"]:checked + label .icon-check-on {
+	display: inline-block;
+    vertical-align: middle;
+}
+.makers-filter input[type="checkbox"]:checked + label:hover i {
+    color: #888789;
+}
+.makers-filter input[type="checkbox"]:checked:disabled + label {
+    opacity: 0.3;
+}
+.makers-filter input[type="checkbox"]:checked:disabled + label:hover {
+    color: #c1c1c1;
+    opacity: 0.3;
+}
+
+
+.type-filter input {
+    display: none;
+}
+.type-filter label {
+	display: block;
+    width: 220px;
+    height: 25px;
+    font-family: "CuprumRegular";
+    font-size: 17px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+.type-filter label i {
+    float: none;
+}
+.type-filter label i {
+    float: none;
+    color: #c1c1c1;
+}
+.type-filter label:hover i {
+    color: #888789;
+}
+.type-filter input:disabled + label {
+    opacity: 0.3;
+}
+.type-filter input:disabled + label:hover i {
+    color: #c1c1c1;
+    opacity: 0.3;
+}
+.type-filter .icon-circle {
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.type-filter input[type="radio"]:checked + label .icon-circle {
+	display: none;
+}
+.type-filter input[type="radio"]:checked + label .icon-circle-dot {
+	display: inline-block;
+    vertical-align: middle;
+}
+.type-filter input[type="radio"]:checked + label:hover i {
+    color: #888789;
+}
+.type-filter input[type="radio"]:checked:disabled + label {
+    opacity: 0.3;
+}
+.type-filter input[type="radio"]:checked:disabled + label {
+    color: #c1c1c1;
+    opacity: 0.3;
+}
+
+
+
+/*  LIST OF GOODS  */
+/*  LIST OF GOODS  */
+/*  LIST OF GOODS  */
+
+
+.goods-page {
+    width: 700px;
+    float: right;    
+}
+
+
+
+/*  SORTING */
+
+
+.sorting {
+	width: 700px;
+    height: 38px;
+    background-color: #f7f3ec;
+    font-family: "CuprumRegular";
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-left: 19px;
+    padding-top: 12px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sorting span {
+    display: inline-block;
+    margin-right: 130px;
+}
+
+.sorting form {
+    display: inline-block;
+    width: 460px;
+}
+.sorting input {
+    display: none;
+}
+.sorting label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.sorting label.sort-types {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 60px;
+    color: rgba(0,0,0,0.3);    
+    border-bottom: 1px dotted #ee3643;
+}
+.sorting label[for="by-function"] {
+    margin-right: 0;
+}
+
+.sorting label.sort-types:hover {
+    color: rgba(0,0,0,1);  
+    border-bottom: 1px solid #ee3643;
+}
+.sorting input[type="radio"]:checked + label {
+    color: #ee3643;
+    border: none;
+}
+
+.sorting label.sort-up-down {
+    float: right;
+}
+.sorting i {
+    font-size: 22px;
+    color: rgba(0,0,0,0.3);
+}
+.sorting i:hover {
+    color: rgba(0,0,0,1);
+}
+.sorting input[type="radio"]:checked + label i {
+    color: #ee3643;
+}
+
+
+
+/*  GOODS */
+
+
+.goods-page .list-unit {
+    margin-top: 20px;
+}
+
+
+
+/*  PAGES */
+
+
+
+.pages-nav a {
+	display: inline-block;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-family: "CuprumRegular";
+    font-size: 14px;
+}
+.pages-nav .active {
+	background-color: #ee3643;
+    border: 1px solid #ee3643;
+    color: #fff;
+}
+.pages-nav a:last-child {
+	width: 140px;
+}
+
+.pages-nav a:hover {
+    border-color: #bdc6ca;
+}
+.pages-nav a:active {
+    border-color: #ee3643;
+}
+.pages-nav .active:hover {
+	background-color: #ee3643;
+    border: 1px solid #ee3643;
+    color: #fff;
+}
+.pages-nav .active:active {
+	background-color: #ee3643;
+    border: 1px solid #ee3643;
+    color: #fff;
+}
+
+
+/*  ABOUT GOODS  */
+/*  ABOUT GOODS  */
+/*  ABOUT GOODS  */
+
+
+.about-goods {
+	width: 100%;
+    min-height: 260px;
+    background-color: #f2f6f8;
+    padding-top: 65px;
+    padding-bottom: 75px;
+}
+
+.about-goods span {
+    display: block;
+	font-family: "CuprumRegular";
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.about-goods p {
+	font-family: "CuprumRegular";
+    font-size: 16px;
+    line-height: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
