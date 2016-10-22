@@ -1,0 +1,31 @@
+{
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+        "scss/styles.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": true,
+            "bracketsEditorBookmarks.bookmarks": {
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/sass/style.css": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/sass/.brackets.json": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/sass/style.css.map": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/index.html": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/css/style.css": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/.brackets.json": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/sass/style.scss": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/sass/sass-style.css": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/sass/sass-style.css.map": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/css/styles.css": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/scss/sass-style.css.map": [],
+                "D:/верстка/работа/8.html-academy - продвинутый интенсив/1. Pink/scss/styles.scss": []
+            },
+            "fonts.fontSize": "11px"
+        }
+    }
+}
