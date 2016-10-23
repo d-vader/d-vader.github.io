@@ -210,6 +210,15 @@ header {
     height: 3px;
     background-color: #fb565a;
 }
+.main-menu .not-page {
+	opacity: 0.5;
+}
+.main-menu .not-page a:hover {
+	color: #000;
+}
+.main-menu .not-page a:active {
+	opacity: 1;
+}
 
 .main-menu .bascet {
     position: relative;

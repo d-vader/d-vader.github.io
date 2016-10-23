@@ -342,6 +342,9 @@ header {
     padding-top: 16px; }
     .main-menu__item:hover a {
       color: #d22856; }
+      @media screen and (min-width: 1200px) {
+        .main-menu__item:hover a {
+          color: #fff; } }
     @media screen and (min-width: 1200px) {
       .main-menu__item:hover {
         color: #fff;

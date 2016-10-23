@@ -83,6 +83,12 @@ h1, h2 {
     background-color: black;
 }
 
+.main-navigation .not-page {
+    opacity: 0.5;
+}
+.main-navigation .not-page a:hover {
+    background-color: black;
+}
 
 .main-header .login {
     float: right;

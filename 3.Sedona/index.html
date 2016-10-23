@@ -13,11 +13,11 @@
     <header class="bold-font clearfix">
         <ul class="main-menu">
             <li class="active"><a href="">информация</a></li>
-            <li><a href="">фото и видео</a></li>
+            <li class="not-page"><a>фото и видео</a></li>
             <li class="logo">
                 <div class="logo"></div>
             </li>
-            <li><a href="">карта штата</a></li>
+            <li class="not-page"><a>карта штата</a></li>
             <li><a href="hotels.html">гостиницы</a></li>
         </ul>
     </header>
@@ -143,8 +143,8 @@
             <a href=""></a>
         </div>
     </footer>
-    
-    
+
+
     <div class="modal-form">
         <div class="header bold-font">поиск гостиницы в седоне</div>
         <form action="">
@@ -152,10 +152,21 @@
             <input type="date" id="time-in">
             <label class="bold-font" for="time-out">дата выезда:</label>
             <input type="date" id="time-out">
-            <label class="bold-font" for="adult">взрослые:</label>
-            <input type="text" id="adult">
-            <label class="bold-font" for="child">дети:</label>
-            <input type="text" id="child">
+
+            <div class="input-wrapper">
+                <label class="bold-font" for="adult">взрослые:</label>
+                <div class="minus"></div>
+                <input type="text" id="adult">
+                <div class="plus"></div>
+            </div>
+
+            <div class="input-wrapper">
+                <label class="bold-font" for="child">дети:</label>
+                <div class="minus"></div>
+                <input type="text" id="child">
+                <div class="plus"></div>
+            </div>
+            
             <button type="submit">найти</button>
         </form>
     </div>
