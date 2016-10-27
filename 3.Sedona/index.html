@@ -153,20 +153,22 @@
             <label class="bold-font" for="time-out">дата выезда:</label>
             <input type="date" id="time-out">
 
+
+            <label class="bold-font" for="adult">взрослые:</label>
             <div class="input-wrapper">
-                <label class="bold-font" for="adult">взрослые:</label>
+                <input type="text" id="adult" placeholder="0">
                 <div class="minus"></div>
-                <input type="text" id="adult">
                 <div class="plus"></div>
             </div>
 
+
+            <label class="bold-font" for="child">дети:</label>
             <div class="input-wrapper">
-                <label class="bold-font" for="child">дети:</label>
+                <input type="text" id="child" placeholder="0">
                 <div class="minus"></div>
-                <input type="text" id="child">
                 <div class="plus"></div>
             </div>
-            
+
             <button type="submit">найти</button>
         </form>
     </div>
@@ -175,7 +177,38 @@
 
 
 
-
+<script>
+    
+    var items = document.querySelectorAll(".input-wrapper");
+    var minus = document.querySelector(".minus");
+    var plus = document.querySelector(".plus");
+    
+    
+    function inputMinus(input){
+        if (input.value > 0) {
+            input.value--;
+        }
+    };
+    function inputPlus(input){
+        if (input.value < 10) {
+            input.value++;
+        }
+    };
+    
+    for (var i=0; i<items.length; i++) {
+        (function(items, i){
+            items[i].querySelector(".minus").addEventListener("click", function(){
+               inputMinus(items[i].querySelector("input")); 
+            });
+            items[i].querySelector(".plus").addEventListener("click", function(){
+               inputPlus(items[i].querySelector("input")); 
+            });
+        })(items, i);
+    }
+    
+    
+    
+</script>
 
 
 
