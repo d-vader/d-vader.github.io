@@ -155,6 +155,16 @@ p {
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
+.work-links a:nth-child(8) {
+    background: url(img/CV-WP.png) top left no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.work-links a:nth-child(9) {
+    background: url(img/MaxShop.jpg) top left no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
 
 .contacts {
 	width: 100%;
