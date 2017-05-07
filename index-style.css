@@ -150,6 +150,11 @@ p {
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
+.work-links a:nth-child(7) {
+    background: url(img/Sharonova.png.png) top left no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
 
 .contacts {
 	width: 100%;
