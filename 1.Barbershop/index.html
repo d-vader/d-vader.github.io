@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barbershop</title>
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container clearfix">
+            <ul class="main-navigation">
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li class="not-page"><a>Информация</a></li>
+                <li class="not-page"><a>Новости</a></li>
+                <li><a href="price-list.html">Прайс-лист</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li class="not-page"><a>Контакты</a></li>
+            </ul>
+            <div class="login">
+                <a href="">Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container advantages clearfix">
+        <div class="logo">
+            <img width="368" height="204" src="img/logo.png" alt="Барбершоп " Бородинский "">
+        </div>
+        <div class="advantages-point">
+            <div class="advantages-title">Быстро</div>
+            <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+        </div>
+        <div class="advantages-point">
+            <div class="advantages-title">Круто</div>
+            <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+        </div>
+        <div class="advantages-point">
+            <div class="advantages-title">Дорого</div>
+            <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+        </div>
+    </div>
+
+    <div class="container index-content clearfix">
+        <div class="left-column">
+            <h2 class="column-title">Новости</h2>
+            <ul class="news">
+                <li class="news-item">
+                    НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+                    <br>
+                    <time datetime="2013-09-25">25 сентября</time>
+                </li>
+                <li class="news-item">
+                    В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕТСВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+                    <br>
+                    <time datetime="2013-09-19">19 сентября</time>
+                </li>
+            </ul>
+            <a class="btn" href="">Все новости</a>
+        </div>
+        <div class="right-column">
+            <h2 class="column-title">Фотогалерея</h2>
+            <div class="gallery">
+                <figure class="gallery-item">
+                    <img src="img/gallery-item-1.png" alt="">
+                </figure>
+                <button class="pver btn" disabled>Назад</button>
+                <button class="next btn">Вперед</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container index-content clearfix">
+        <div class="left-column">
+            <div class="main-contacts">
+                <h2 class="column-title">Контактная информация</h2>
+                <p>BARBERSHOP «BORODINSKI»
+                    <br> АДРЕС: Г. МОСКВА, УЛ. СОБАКИ ПАВЛОВА, Д. 13
+                    <br> ТЕЛЕФОН: +7 (495) 666-02-666
+                </p>
+                <p>ВРЕМЯ РАБОТЫ:
+                    <br> ПН — ПТ: С 10:00 ДО 22:00
+                    <br> СБ — ВС: С 10:00 ДО 19:00
+                </p>
+                <a class="btn map-open" href="">Как проехать</a>
+                <a class="btn" href="">Обратная связь</a>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="form">
+                <h2 class="column-title">Записаться</h2>
+                <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+                <form action="/echo" method="post">
+                    <input type="text" placeholder="дата">
+                    <input type="text" placeholder="время">
+                    <input type="text" placeholder="ваше имя">
+                    <input type="text" placeholder="телефон">
+                    <button class="btn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <div class="footer-contacts">
+                <p>BARBERSHOP «BORODINSKI»</p>
+                <p>АДРЕС: Г. МОСКВА, УЛ. СОБАКИ ПАВЛОВА, Д. 13</p>
+                <p>ТЕЛЕФОН: +7 (495) 666-02-666</p>
+            </div>
+            <div class="footer-social">
+                <p>Давайте дружить!</p>
+                <a class="vk" href=""></a>
+                <a class="fb" href=""></a>
+                <a class="ins" href=""></a>
+            </div>
+            <div class="footer-copyright">
+                <p>Дизайт сайта:</p> <a class="btn" href="">Glukhanko.ru</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="modal-form">
+        <div class="modal-close"></div>
+        <h2 class="modal-form-title">Личный кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form" action="/echo" method="post">
+            <input class="icon-user" type="text" name="login" placeholder="Логин">
+            <input class="icon-password" type="password" name="password" placeholder="Пароль">
+            <input type="checkbox" name="remember" id="remember-me" checked>
+            <label for="remember-me">Запомнить меня</label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+            <button class="btn" type="submit">Войти</button>
+        </form>
+    </div>
+
+
+
+    <div class="modal-map">
+        <div class="modal-close"></div>
+    </div>
+
+
+    <script>
+        var link = document.querySelector(".login");
+        var popup = document.querySelector(".modal-form");
+        var close = document.querySelector(".modal-close");
+        var form = popup.querySelector("form");
+        var login = popup.querySelector("[name=login]");
+        var password = popup.querySelector("[name=password]");
+        var storage = localStorage.getItem("login");
+
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            popup.classList.add("modal-show");
+            if (storage) {
+                login.value = storage;
+                password.focus();
+            } else {
+                login.focus();
+            }
+        });
+
+        close.addEventListener("click", function (event) {
+            event.preventDefault();
+            popup.classList.remove("modal-show");
+        });
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            if (!(login.value && password.value)) {
+                event.preventDefault();
+                popup.classList.remove("modal-shake");
+                popup.classList.add("modal-shake");
+            } else {
+                localStorage.setItem("login", login.value);
+            }
+        }); /* эта функция не сработает, если у input будет стоять     required */
+
+        window.addEventListener("keydown", function (event) {
+            if (event.keyCode === 27) {
+                if (popup.classList.contains("modal-show")) {
+                    popup.classList.remove("modal-show");
+                }
+            }
+        });
+
+
+        var mapOpen = document.querySelector(".map-open");
+        var mapPopup = document.querySelector(".modal-map");
+        var mapClose = mapPopup.querySelector(".modal-close");
+
+        mapOpen.addEventListener("click", function (event) {
+            event.preventDefault();
+            mapPopup.classList.add("modal-show");
+        });
+
+        mapClose.addEventListener("click", function (event) {
+            event.preventDefault();
+            mapPopup.classList.remove("modal-show");
+        });
+
+        window.addEventListener("keydown", function (event) {
+            if (event.keyCode === 27) {
+                if (mapPopup.classList.contains("modal-show")) {
+                    event.preventDefault();
+                    mapPopup.classList.remove("modal-show");
+                }
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

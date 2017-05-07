@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Technomart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">техномарт</a>
+            <div class="box-search">
+                <input class="search" type="text" placeholder="Поиск:">
+                <i class="icon-search"></i>
+            </div>
+            <div class="bookmark"><i class="icon-bookmark"></i>Закладки: <span class="amount">0</span></div>
+            <div class="basket"><i class="icon-basket"></i>Корзина: <span class="amount">0</span></div>
+            <a class="order" href="">Оформить заказ</a>
+        </div>
+    </header>
+
+    <div class="top-info">
+
+        <div class="info-enter container">
+            <div class="discr">
+                <h2>Интернет-магазин строительных материалов и инстументов для ремонта</h2>
+            </div>
+            <div class="contact">
+                <div class="phone"><i class="icon-phone"></i>+7(495)555-05-55</div>
+                <span>Москва, ул. Строителей, д. 15</span>
+            </div>
+            <div class="login"><i class="icon-login"></i>Войти</div>
+            <div class="registr">Регистрация</div>
+            <div class="cabinet"></div>
+        </div>
+
+        <div class="main-menu container">
+            <ul>
+                <li>
+                    <a href="">Главная</a>
+                </li>
+                <li>
+                    <a href="">Компания</a>
+                </li>
+                <li>
+                    <a href="">Каталог</a>
+                </li>
+                <li>
+                    <a href="">Новости</a>
+                </li>
+                <li>
+                    <a href="">Спецпредложения</a>
+                </li>
+                <li>
+                    <a href="">Доставка</a>
+                </li>
+                <li>
+                    <a href="">Контакты</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="promo container clearfix">
+        <div class="promo-point material">
+            <h3>Материалы</h3>
+            <a href="" class="btn">на любой вкус</a>
+            <div class="flag flag-new"></div>
+        </div>
+        <div class="promo-point tool">
+            <h3>Инструмент</h3>
+            <a href="" class="btn">на все случаи</a>
+        </div>
+        <div class="promo-point tech">
+            <h3>Техника</h3>
+            <a href="" class="btn">для стройки</a>
+        </div>
+
+
+
+        <div class="slider-promo">
+            <div class="slide-item first display-slide-1">
+                <div class="name">
+                    <h3>перфораторы</h3>
+                    <span>Настоящие мужские игрушки</span>
+                </div>
+                <a href="" class="btn">открыть каталог</a>
+                <!--
+                <div class="toggle">
+                    <div class="label slide-1"></div>
+                    <div class="label slide-2"></div>
+                </div>                
+-->
+            </div>
+
+            <!--                проблема в том, что некрасиво, когда уезжают переключатели. а как сделать,чтобы они остались и меняли цвет не знаю... срабатывает fixed, но не знаю, как его переделать, чтобы он был относительно родителя, а не окна... плюс может можно как-то через if, но тут вроде получится вечный цикл, что не даст странице загрузиться... Одна кнопка не работает, если вставить их в сами слайды...-->
+
+            <div class="slide-item second display-slide-2">
+                <div class="name">
+                    <h3>дрели</h3>
+                    <span>Соседям на радость</span>
+                </div>
+                <a href="" class="btn">открыть каталог</a>
+                <!--
+                <div class="toggle">
+                    <div class="label slide-1"></div>
+                    <div class="label slide-2"></div>
+                </div>
+-->
+            </div>
+
+
+            <div class="left-arrow slide-11">
+                <i class="icon-left"></i>
+            </div>
+            <div class="right-arrow slide-22">
+                <i class="icon-right"></i>
+            </div>
+
+
+            <div class="toggle">
+                <div class="label slide-1"></div>
+                <div class="label slide-2"></div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <div class="promo-point sale">
+            <h3>Скидки 50%</h3>
+            <a href="" class="btn">на 350 товаров</a>
+        </div>
+        <div class="promo-point delivery">
+            <h3>Доставка</h3>
+            <a href="" class="btn">бесплатно</a>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="products-list clearfix">
+        <div class="head clearfix">
+            <span>популярные товары:</span>
+            <a href="" class="btn">все популярные товары</a>
+        </div>
+        <div class="list-unit">
+            <div class="buy-book">
+                <a href="" class="to-buy"><i class="icon-basket"></i>купить</a>
+                <a href="" class="to-book">в закладки</a>
+            </div>
+            <h3>Перфоратор BOSCH BFG 9000</h3>
+            <span>32 500 р.</span>
+            <a href="" class="btn">25 500 р.</a>
+        </div>
+        <div class="list-unit">
+            <div class="buy-book">
+                <a href="" class="to-buy"><i class="icon-basket"></i>купить</a>
+                <a href="" class="to-book">в закладки</a>
+            </div>
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <span>22 500 р.</span>
+            <a href="" class="btn">15 500 р.</a>
+        </div>
+        <div class="list-unit">
+            <div class="buy-book">
+                <a href="" class="to-buy"><i class="icon-basket"></i>купить</a>
+                <a href="" class="to-book">в закладки</a>
+            </div>
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <span>30 500 р.</span>
+            <a href="" class="btn">25 500 р.</a>
+        </div>
+        <div class="list-unit">
+            <div class="buy-book">
+                <a href="" class="to-buy"><i class="icon-basket"></i>купить</a>
+                <a href="" class="to-book">в закладки</a>
+            </div>
+            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <span></span>
+            <a href="" class="btn">12 500 р.</a>
+            <div class="flag flag-new"></div>
+        </div>
+    </div>
+    
+    
+    <div class="modal-bought">
+        <div class="alert">
+            <span>Товар добавлен в корзину</span>
+        </div>
+        <div class="agree">
+            <a href="" class="make-order btn">оформить заказ</a>
+            <a href="" class="continue btn">продолжить покупки</a>
+        </div>
+    </div>
+
+
+    <div class="makers-list clearfix">
+        <div class="head">
+            <span>популярные производители:</span>
+            <a href="" class="btn">все производители</a>
+        </div>
+        <div class="list-unit"></div>
+        <div class="list-unit"></div>
+        <div class="list-unit"></div>
+        <div class="list-unit"></div>
+        <div class="list-unit"></div>
+        <div class="list-unit"></div>
+        <div class="list-unit"></div>
+        <div class="list-unit"></div>
+    </div>
+
+
+    <div class="services">
+        <div class="container clearfix">
+            <span>сервисы</span>
+            <p>Хороший интернет-магазин отличается от плохого не толь ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            <div class="buttons">
+                <span class="delivery-btn active-span">Доставка</span>
+                <span class="guarantee-btn">Гарантия</span>
+                <span class="credit-btn">Кредит</span>
+            </div>
+            <div class="slider-services">
+                <div class="slide delivery-slide display-slide">
+                    <span>доставка</span>
+                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                </div>
+                <div class="slide guarantee-slide">
+                    <span>гарантия</span>
+                    <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                </div>
+                <div class="slide credit-slide">
+                    <span>кредит</span>
+                    <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                    <a href="" class="btn">отправить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="company container clearfix">
+        <div class="company-info">
+            <span>КОМПАНИЯ «Техномарт»</span>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными организациями:</p>
+            <ul>
+                <li>Деловые линии</li>
+                <li>Автотрейдинг</li>
+                <li>ЖелДорЭкспедиция</li>
+                <a href="" class="btn">подробнее о компании</a>
+            </ul>
+        </div>
+        <div class="contacts">
+            <span>КОНТАКТЫ</span>
+            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+            <a class="map" href="https://www.google.com.ua/maps?source=tldsi&hl=ru"></a>
+            <a href="" class="btn open-form">Заблудились? Напишите нам!</a>
+        </div>
+    </div>
+
+
+    <form action="" class="modal-form">
+        <label for="">Ваше имя:</label>
+        <label for="">Ваш e-mail:</label>
+        <input type="text" placeholder="Представтесь, пожалуйста">
+        <input type="text" placeholder="Для отправки ответа">
+        <label for="">Текст письма:</label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <div class="submit">
+            <button type="submit">отправить</button>
+            <button type="reset" class="close-form">отмена</button>
+        </div>
+    </form>    
+
+
+
+
+
+
+
+
+
+    <div class="bottom-info clearfix">
+        <div class="container clearfix">
+            <div class="logo-contact">
+                <a class="logo" href="index.html">техномарт</a>
+                <p>г. Москва, ул. Строителей, 15
+                    <br>+7 (495) 555-05-55 </p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="">Компания</a>
+                    </li>
+                    <li>
+                        <a href="">Новости</a>
+                    </li>
+                    <li>
+                        <a href="">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="offers">
+                <ul>
+                    <li>
+                        <a href="">Материалы</a>
+                    </li>
+                    <li>
+                        <a href="">Техника</a>
+                    </li>
+                    <li>
+                        <a href="">Инструмент</a>
+                    </li>
+                    <li>
+                        <a href="">Спецпредложения</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container clearfix">
+            <div class="copyright">
+                <p>© 2010–2013 Компания «Техномарт» Все права защищены</p>
+            </div>
+            <div class="social">
+                <a href=""><i class="icon-vk"></i></a>
+                <a href=""><i class="icon-facebook"></i></a>
+                <a href=""><i class="icon-instagramm"></i></a>
+            </div>
+            <div class="email">
+                <span>Обратная связь: </span>
+                <a href="">info@technomart.ru</a>
+            </div>
+            <div class="designer">
+                <span>Дизайн сайта — </span>
+                <a href="">www.Glukhanko.ru</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+        var toggle1 = document.querySelector(".slide-1");
+        var toggle2 = document.querySelector(".slide-2");
+        var toggle11 = document.querySelector(".slide-11");
+        var toggle22 = document.querySelector(".slide-22");
+        var slide1 = document.querySelector(".first");
+        var slide2 = document.querySelector(".second");
+
+
+        toggle1.addEventListener("click", function (event) {
+            //        event.preventDefault();
+
+            slide2.classList.remove("display-slide-2");
+            slide1.classList.remove("display-slide-1");
+            slide2.classList.remove("display-slide-1");
+            slide1.classList.remove("display-slide-2");
+
+            //  alert( slide2.style.zIndex +" "+  slide1.style.zIndex);
+            slide2.style.left = "-620px";
+            slide1.style.left = "0px";
+            slide1.style.zIndex = "2";
+            slide1.style.display = "block";
+
+            setTimeout(function () {
+                slide2.classList.add("display-slide-2");
+                slide1.classList.add("display-slide-1");
+            }, 1000); // set delay as per your need
+
+        });
+
+
+        toggle2.addEventListener("click", function (event) {
+            //        event.preventDefault();
+
+
+            slide2.classList.remove("display-slide-2");
+            slide1.classList.remove("display-slide-1");
+            slide2.classList.remove("display-slide-1");
+            slide1.classList.remove("display-slide-2");
+
+            //alert( slide2.style.zIndex +" "+  slide1.style.zIndex);
+            slide1.style.left = "-620px";
+            slide2.style.left = "0px";
+            slide2.style.zIndex = "2";
+            slide2.style.display = "block";
+
+            setTimeout(function () {
+                slide2.classList.add("display-slide-1");
+                slide1.classList.add("display-slide-2");
+            }, 1000); // set delay as per your need
+
+        });
+
+
+        toggle11.addEventListener("click", function (event) {
+            //        event.preventDefault();
+
+            slide2.classList.remove("display-slide-2");
+            slide1.classList.remove("display-slide-1");
+            slide2.classList.remove("display-slide-1");
+            slide1.classList.remove("display-slide-2");
+
+            //  alert( slide2.style.zIndex +" "+  slide1.style.zIndex);
+            slide2.style.left = "-620px";
+            slide1.style.left = "0px";
+            slide1.style.zIndex = "2";
+            slide1.style.display = "block";
+
+            setTimeout(function () {
+                slide2.classList.add("display-slide-2");
+                slide1.classList.add("display-slide-1");
+            }, 1000); // set delay as per your need
+
+        });
+
+
+        toggle22.addEventListener("click", function (event) {
+            //        event.preventDefault();
+
+
+            slide2.classList.remove("display-slide-2");
+            slide1.classList.remove("display-slide-1");
+            slide2.classList.remove("display-slide-1");
+            slide1.classList.remove("display-slide-2");
+
+            //alert( slide2.style.zIndex +" "+  slide1.style.zIndex);
+            slide1.style.left = "-620px";
+            slide2.style.left = "0px";
+            slide2.style.zIndex = "2";
+            slide2.style.display = "block";
+
+            setTimeout(function () {
+                slide2.classList.add("display-slide-1");
+                slide1.classList.add("display-slide-2");
+            }, 1000); // set delay as per your need
+
+        });
+
+
+
+
+        //    изначально была просто анимация для зацикленного слайдера без
+        //    управляющих кнопок. Без анимации переключение по кнопкам 
+        //    работает, с ней и JS - нет. Решение - добавлять класс, в котором свойство - эта самая анимация. Проблема - при переключении кнопками, сбивается анимация, постоенная на CSS с процентами. Решение - изменение анимаций для слайдов - при переключении кнопкой активный слайд становится как-бы первым и для него запускается анимация первого слайда, а для второго - наоборот. По сути кнопки меняют местами keyframes для слайдов.
+
+        //    нужно убрать event.preventDefault(), потому что он не дает 
+
+        // появилась следующая проблема - вместе переключение по кнопкам и зацикленность работали не полностью. После части анимации, когда первый слайд сменялся вторым, первая кнопка не срабатывала. Она начинала работать,только если перед этим нажать вторую, соответствующую активному слайду. До сих пор не знаю в чем проблема - анимация или странная смена классов. Но помогло явное указание стилей для слайдов при переключении...
+
+
+
+
+        var serviceLink1 = document.querySelector(".delivery-btn");
+        var serviceLink2 = document.querySelector(".guarantee-btn");
+        var serviceLink3 = document.querySelector(".credit-btn");
+        var serviceSlide1 = document.querySelector(".delivery-slide");
+        var serviceSlide2 = document.querySelector(".guarantee-slide");
+        var serviceSlide3 = document.querySelector(".credit-slide");
+
+
+
+        serviceLink1.addEventListener("click", function () {
+            serviceLink1.classList.add("active-span");
+            serviceLink2.classList.remove("active-span");
+            serviceLink3.classList.remove("active-span");
+
+            serviceSlide1.classList.add("display-slide");
+            serviceSlide2.classList.remove("display-slide");
+            serviceSlide3.classList.remove("display-slide");
+
+        });
+        serviceLink2.addEventListener("click", function () {
+            serviceLink2.classList.add("active-span");
+            serviceLink1.classList.remove("active-span");
+            serviceLink3.classList.remove("active-span");
+
+            serviceSlide2.classList.add("display-slide");
+            serviceSlide1.classList.remove("display-slide");
+            serviceSlide3.classList.remove("display-slide");
+
+        });
+        serviceLink3.addEventListener("click", function () {
+            serviceLink3.classList.add("active-span");
+            serviceLink2.classList.remove("active-span");
+            serviceLink1.classList.remove("active-span");
+
+            serviceSlide3.classList.add("display-slide");
+            serviceSlide2.classList.remove("display-slide");
+            serviceSlide1.classList.remove("display-slide");
+
+        });
+        
+        
+        
+        
+        
+        var btnForm = document.querySelector(".open-form");
+        var btnClose = document.querySelector(".close-form")
+        var form = document.querySelector(".modal-form");
+        
+        
+        btnForm.addEventListener("click", function(event){
+            event.preventDefault();
+            form.classList.add("show-modal-form");
+        });
+        
+        btnClose.addEventListener("click", function(){
+//            event.preventDefault();
+            form.classList.remove("show-modal-form");
+        });
+        
+//        если оставить preventDefault, то не будет срабатывать очистка формы, что иногда нужно, иногда нет, но чаще нужно
+        
+        
+        
+        
+        var toBuy = document.querySelectorAll(".to-buy");
+        var boughtAlert = document.querySelector(".modal-bought");
+        var continueBuy = document.querySelector(".continue");
+        
+        for (var i=0;i<toBuy.length;i++){
+        toBuy[i].addEventListener("click", function(event){
+            event.preventDefault();
+            boughtAlert.classList.add("display-modal-bought");
+        });
+        }
+        
+        continueBuy.addEventListener("click", function(event){
+            event.preventDefault();
+            boughtAlert.classList.remove("display-modal-bought");
+        });
+        
+            
+//    querySelectorAll создает NodeList, а для масива не работает addEventListener, поэтому нужно проганять через цикл и применять это к каждому элементу
+        
+        
+    
+        
+        
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
