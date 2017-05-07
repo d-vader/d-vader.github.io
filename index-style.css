@@ -108,6 +108,7 @@ p {
 
 .work-links {
 	width: 100%;
+    height: auto;
     font-size: 0;
     padding: 0 40px;
     text-align: center;
