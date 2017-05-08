@@ -120,6 +120,14 @@ p {
     margin-right: 30px;
     margin-bottom: 50px;
 }
+.work-links a:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #fff;
+}
 .work-links a:nth-child(1) {
     background: url(img/Barbershop-index.jpg) top left no-repeat;
     -webkit-background-size: 100% auto;
@@ -168,7 +176,7 @@ p {
 
 .contacts {
 	width: 100%;
-    padding: 0 40px;
+    padding: 0 40px 20px 40px;
     text-align: center;
     font-size: 0;
 }
