@@ -128,47 +128,62 @@ p {
     transform: scale(1.1);
     box-shadow: 0 0 15px #fff;
 }
-.work-links a:nth-child(1) {
+.work-links a.neftyanik {
+    background: url(img/neftyanik-index.jpg) top left no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.work-links a.vosstanie {
+    background: url(img/vosstanie-index.jpg) top left no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.work-links a.inzhsmet {
+    background: url(img/inzhsmet-index.jpg) top left no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.work-links a.barbershop {
     background: url(img/Barbershop-index.jpg) top left no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
-.work-links a:nth-child(2) {
+.work-links a.nerds {
     background: url(img/nerds-index.jpg) top left no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
-.work-links a:nth-child(3) {
+.work-links a.sedona {
     background: url(img/sedona-index.jpg) top left no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
-.work-links a:nth-child(4) {
+.work-links a.technomart {
     background: url(img/technomart-index.jpg) top left no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
-.work-links a:nth-child(5) {
+.work-links a.pink {
     background: url(img/Pink-browser.jpg) top left no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
-.work-links a:nth-child(6) {
+.work-links a.lakshmi {
     background: url(img/Lakshmi.png) top left no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
-.work-links a:nth-child(7) {
+.work-links a.sharonova {
     background: url(img/Sharonova.png) top left no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
-.work-links a:nth-child(8) {
+.work-links a.cv-wp {
     background: url(img/CV-WP.png) top left no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
 }
-.work-links a:nth-child(9) {
+.work-links a.max-shop {
     background: url(img/MaxShop.jpg) top left no-repeat;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
