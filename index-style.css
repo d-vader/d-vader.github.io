@@ -128,6 +128,11 @@ p {
     transform: scale(1.1);
     box-shadow: 0 0 15px #fff;
 }
+.work-links a.lulu {
+    background: url(img/lulu.png) top left no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
 .work-links a.neftyanik {
     background: url(img/neftyanik-index.jpg) top left no-repeat;
     -webkit-background-size: 100% auto;
