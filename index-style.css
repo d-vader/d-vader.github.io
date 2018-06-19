@@ -119,6 +119,11 @@ p {
     height: 200px;
     margin-right: 30px;
     margin-bottom: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    transition: all 0.5s ease-in-out;
 }
 .work-links a:hover {
     -webkit-transform: scale(1.1);
@@ -128,70 +133,47 @@ p {
     transform: scale(1.1);
     box-shadow: 0 0 15px #fff;
 }
+.work-links a.dailyfood {
+    background-image: url(img/dailyfood.jpg);
+}
 .work-links a.lulu {
-    background: url(img/lulu.png) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/lulu.png);
 }
 .work-links a.neftyanik {
-    background: url(img/neftyanik-index.jpg) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/neftyanik-index.jpg);
 }
 .work-links a.vosstanie {
-    background: url(img/vosstanie-index.jpg) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/vosstanie-index.jpg);
 }
 .work-links a.inzhsmet {
-    background: url(img/inzhsmet-index.jpg) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/inzhsmet-index.jpg);
 }
 .work-links a.barbershop {
-    background: url(img/Barbershop-index.jpg) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/Barbershop-index.jpg);
 }
 .work-links a.nerds {
-    background: url(img/nerds-index.jpg) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/nerds-index.jpg);
 }
 .work-links a.sedona {
-    background: url(img/sedona-index.jpg) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/sedona-index.jpg);
 }
 .work-links a.technomart {
-    background: url(img/technomart-index.jpg) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/technomart-index.jpg);
 }
 .work-links a.pink {
-    background: url(img/Pink-browser.jpg) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/Pink-browser.jpg);
 }
 .work-links a.lakshmi {
-    background: url(img/Lakshmi.png) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/Lakshmi.png);
 }
 .work-links a.sharonova {
-    background: url(img/Sharonova.png) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/Sharonova.png);
 }
 .work-links a.cv-wp {
-    background: url(img/CV-WP.png) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/CV-WP.png);
 }
 .work-links a.max-shop {
-    background: url(img/MaxShop.jpg) top left no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
+    background-image: url(img/MaxShop.jpg);
 }
 
 .contacts {
