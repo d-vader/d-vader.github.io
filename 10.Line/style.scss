@@ -1,0 +1,1964 @@
+@font-face {
+  font-family: "Geometria";
+  src: url("fonts/GEOMETRIA.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Geometria-Bold";
+  src: url("fonts/GEOMETRIA-BOLD.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Geometria-ExtraBlack";
+  src: url("fonts/GEOMETRIA-EXTABLACK.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Geometria-ExtraLight";
+  src: url("fonts/GEOMETRIA-EXTRALIGHT.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Geometria-Heavy";
+  src: url("fonts/GEOMETRIA-HEAVY.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Geometria-Light";
+  src: url("fonts/GEOMETRIA-LIGHT.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Geometria-Medium";
+  src: url("fonts/GEOMETRIA-MEDIUM.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Geometria-Thin";
+  src: url("fonts/GEOMETRIA-THIN.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "LatoRegular";
+  src: url("fonts/LatoRegular/LatoRegular.eot");
+  src: url("fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+  url("fonts/LatoRegular/LatoRegular.woff") format("woff"),
+  url("fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "LatoBold";
+  src: url("fonts/LatoBold/LatoBold.eot");
+  src: url("fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+  url("fonts/LatoBold/LatoBold.woff") format("woff"),
+  url("fonts/LatoBold/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "LatoLight";
+  src: url("fonts/LatoLight/LatoLight.eot");
+  src: url("fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+  url("fonts/LatoLight/LatoLight.woff") format("woff"),
+  url("fonts/LatoLight/LatoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin GMT ($size, $lineHeight) {
+  font-family: "Geometria", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin GMT-B ($size, $lineHeight) {
+  font-family: "Geometria-Bold", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin GMT-EB ($size, $lineHeight) {
+  font-family: "Geometria-ExtraBlack", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin GMT-EL ($size, $lineHeight) {
+  font-family: "Geometria-ExtraLight", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin GMT-H ($size, $lineHeight) {
+  font-family: "Geometria-Heavy", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin GMT-L ($size, $lineHeight) {
+  font-family: "Geometria-Light", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin GMT-M ($size, $lineHeight) {
+  font-family: "Geometria-Medium", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin GMT-T ($size, $lineHeight) {
+  font-family: "Geometria-Thin", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin Lato-R ($size, $lineHeight) {
+  font-family: "LatoRegular", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin Lato-B ($size, $lineHeight) {
+  font-family: "LatoBold", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+@mixin Lato-L ($size, $lineHeight) {
+  font-family: "LatoLight", Arial, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+
+$width-small: 768px;
+$width-large: 1600px;
+
+@mixin responsive($width) {
+  @if $width == s {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+  @else if $width == sm {
+    @media only screen and (max-width: $width-small) {
+      @content;
+    }
+  }
+  //@else if $width == md {
+  //  @media all and (min-width: 769px) and (max-width: 980px) {
+  //    @content;
+  //  }
+  //}
+  @else if $width == md {
+    @media all and (max-width: 980px) {
+      @content;
+    }
+  }
+  @else if $width == lg {
+    @media only screen and (min-width: $width-large) {
+      @content;
+    }
+  }
+}
+//@mixin responsive-pro($width-start, $width-end) {
+//  @else if $width == sm {
+//    @media only screen and (min-width: 600px) and (max-width: $width-small) {
+//      @content;
+//    }
+//  }
+//  @else if $width == md {
+//    @media all and (min-width: 600px) and (max-width: 980px) {
+//      @content;
+//    }
+//  }
+//  @else if $width == lg {
+//    @media only screen and (min-width: 600px) and (min-width: $width-large) {
+//      @content;
+//    }
+//  }
+//}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 0.005em;;
+}
+a {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 980px;
+  margin: 0 auto;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.wrapper {
+
+  &--first {
+    background: url("img/bg-1-2-screen.jpg") top left no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-bottom: 46px;
+  }
+  &--second {
+    background: url("img/bg-5-6-screen.jpg") top left no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  &--third {
+    background: url("img/bg-7-8-screen.jpg") top left no-repeat;
+    //-webkit-background-size: cover;
+    //background-size: cover;
+    background-size: 100% 100%;
+  }
+}
+
+
+
+
+
+/******************************/
+/*   HEADER  */
+/*********************************/
+
+
+.header {
+  padding-top: 38px;
+  margin-bottom: 75px;
+
+  @include responsive(sm) {
+    position: relative;
+    margin-bottom: 35px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  &__logo {
+    display: inline-block;
+    vertical-align: middle;
+    //width: 70px;
+    //height: 39px;
+    margin-right: 215px;
+
+    @include Lato-L(32px, 35px);
+    text-transform: uppercase;
+
+    @include responsive(sm) {
+      float: left;
+      margin: 0;
+    }
+    @include responsive(md) {
+      margin-right: 15px;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &--big {
+      @include Lato-L(32px, 35px);
+    }
+    &--small {
+      @include Lato-L(13px, 13px);
+    }
+  }
+  &__phone {
+    display: inline-block;
+    vertical-align: middle;
+    width: 175px;
+    @include GMT(14px, 16px);
+    text-align: right;
+  }
+  &__number {
+  }
+  &__order-call {
+    color: #34b9fe;
+    cursor: pointer;
+
+    &:hover, &:active {
+      color: #8f8f8f;
+    }
+  }
+  &__burger {
+    float: right;
+    display: none;
+    width: 40px;
+    height: 40px;
+
+    @include responsive(sm) {
+      display: block;
+    }
+
+    div {
+      width: 100%;
+      height: 10px;
+      margin-bottom: 3px;
+      border-radius: 5px;
+      background-color: #3485d3;
+    }
+  }
+  &__nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 501px;
+    height: 66px;
+    background: url("img/nav-bg.png") top left no-repeat;
+
+    @include responsive(sm) {
+      position: absolute;
+      top: 110%;
+      display: none;
+      width: 100%;
+      height: auto;
+      background: #3485d3;
+    }
+  }
+  ul {
+    display: table;
+    width: 100%;
+    height: 90%;
+    padding-left: 76px;
+
+    @include responsive(sm) {
+      display: block;
+      padding: 0;
+    }
+  }
+  &__item {
+    display: table-cell;
+    vertical-align: middle;
+    @include Lato-B(14px, 14px);
+    //color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include responsive(sm) {
+      display: block;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+  &__link {
+    display: block;
+
+    &:hover {
+      color: #2fc6ef;
+    }
+  }
+}
+
+
+/******************************/
+/*   HEADER  end  */
+/*********************************/
+
+
+
+/******************************/
+/*   ABOUT  */
+/*********************************/
+
+.about {
+
+  &__header {
+    max-width: 730px;
+    margin: auto;
+    margin-bottom: 55px;
+    padding-bottom: 10px;
+    @include GMT-H(36px, 46px);
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 5px solid #601fd0;
+
+    @include responsive(sm) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+  &__description {
+    display: block;
+    max-width: 670px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    @include GMT-M(14px, 27px);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__order {
+    max-width: 651px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  &__item {
+    width: 220px;
+
+    @include responsive(sm) {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
+    &--left {
+      float: left;
+
+      @include responsive(s) {
+        float: none;
+      }
+    }
+    &--right {
+      float: right;
+
+      @include responsive(s) {
+        float: none;
+      }
+    }
+  }
+  &__question {
+    margin-bottom: 29px;
+    @include GMT-M(15px, 15px);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include responsive(sm) {
+      margin-bottom: 15px;
+    }
+  }
+  &__button {
+    width: 176px;
+    height: 34px;
+    margin: 0 auto;
+    padding-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px 1px #000;
+    background-color: #601fd0;
+    @include GMT-M(12px, 12px);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #02a7df;
+    }
+  }
+}
+
+
+/******************************/
+/*   ABOUT  end  */
+/*********************************/
+
+
+
+/******************************/
+/*   SERVICES   */
+/*********************************/
+
+.services {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  background-color: #110e32;
+  font-size: 0;
+
+  @include responsive(md) {
+    text-align: center;
+  }
+
+  &__header {
+    padding: 50px 0 25px;
+    @include GMT-EB(24px, 24px);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include responsive(sm) {
+      margin-top: 30px;
+    }
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    margin-right: 46px;
+    color: #ffffff;
+
+    @include responsive(sm) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+  }
+  &__img  {
+    width: 88px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: url("img/services-icons.png") 9px 0px no-repeat;
+
+    &:hover {
+      background-position: 9px -103px;
+    }
+
+    @include responsive(sm) {
+      margin-bottom: 0;
+    }
+
+    &--second {
+      background-position: -243px 0px;
+
+      &:hover {
+        background-position: -243px -103px;
+      }
+    }
+    &--third {
+      background-position: -500px 0px;
+
+      &:hover {
+        background-position: -500px -103px;
+      }
+    }
+    &--fourth {
+      background-position: -768px 0px;
+
+      &:hover {
+        background-position: -768px -98px;
+      }
+    }
+  }
+  &__name {
+    margin-bottom: 30px;
+    @include GMT-M(18px, 18px);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include responsive(sm) {
+      margin-bottom: 20px;
+    }
+  }
+  &__description {
+    width: 170px;
+    margin: 0 auto;
+    @include GMT-L(14px, 14px);
+    color: #878990;
+  }
+}
+
+/******************************/
+/*   SERVICES  end  */
+/*********************************/
+
+
+/******************************/
+/*   APPLICATION  */
+/*********************************/
+
+.application {
+  background-color: #01061c;
+  padding-bottom: 55px;
+
+  &__header {
+    padding: 40px 0;
+    @include GMT-EB(24px, 24px);
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #23449f;
+  }
+  &__order {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #23449f;
+  }
+  &__wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @include responsive(sm) {
+      text-align: center;
+    }
+  }
+  &__item {
+    width: 240px;
+    padding-top: 25px;
+
+    &--left {
+      float: left;
+
+      @include responsive(sm) {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+    &--right {
+      float: right;
+
+      @include responsive(sm) {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+  &__question {
+    margin-bottom: 10px;
+    @include GMT-M(15px, 15px);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__description {
+    height: 70px;
+    margin-bottom: 21px;
+    @include GMT-L(14px, 15px);
+    text-align: center;
+    color: #878990;
+  }
+  &__button {
+    width: 176px;
+    height: 34px;
+    margin: 0 auto;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-color: #2fc6ef;
+    @include GMT-M(12px, 12px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #050505;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fdfdfd;
+    }
+  }
+}
+
+
+/******************************/
+/*   APPLICATION  end  */
+/*********************************/
+
+
+
+/******************************/
+/*   WORK  */
+/*********************************/
+
+.work {
+  padding-top: 375px;
+  padding-bottom: 15px;
+  background: url("img/bg-work.jpg") top left no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-size: 0;
+  text-align: right;
+
+  @include responsive(md) {
+    padding-top: 35px;
+    background: #0e0b28;
+  }
+
+  &__header {
+    margin-bottom: 85px;
+    padding-right: 12px;
+    border-right: 13px solid #601fd0;
+    @include GMT-H(60px, 72px);
+    text-align: right;
+    text-transform: uppercase;
+
+    @include responsive(sm) {
+      margin-bottom: 45px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  &__who {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 360px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+    padding-left: 30px;
+    border-top: 1px solid #2b2942;
+
+    @include responsive(md) {
+      display: block;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+
+    &--we {
+      padding-left: 0;
+      padding-right: 30px;
+      border-right: 1px solid #2b2942;
+
+      @include responsive(md) {
+        padding-right: 0;
+        border-right: none;
+      }
+    }
+  }
+  &__author {
+    margin-bottom: 18px;
+    @include GMT-B(14px, 14px);
+    text-align: center;
+  }
+  &__description {
+    margin-bottom: 18px;
+    @include GMT-L(14px, 15px);
+    text-align: center;
+    color: #878990;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/******************************/
+/*   WORK  end  */
+/*********************************/
+
+
+
+
+/******************************/
+/*   PROJECTS  */
+/*********************************/
+
+.projects {
+  padding-top: 60px;
+
+  &__header {
+    margin-bottom: 30px;
+    @include GMT-EB(24px, 24px);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__controls {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0;
+  }
+  &__arrow {
+    display: inline-block;
+    vertical-align: middle;
+    width: 41px;
+    height: 41px;
+    margin-right: 10px;
+    background: url("img/projects-arrow.png") top left no-repeat;
+    cursor: pointer;
+    opacity: 0.5;
+
+    &--right {
+      margin-right: 0;
+      margin-left: 10px;
+      transform: rotateY(180deg);
+    }
+
+    &:hover, &:active {
+      opacity: 1;
+    }
+  }
+  &__title {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 40px;
+    @include GMT-B(14px, 14px);
+    text-transform: uppercase;
+
+    @include responsive(sm) {
+      padding: 0 10px;
+    }
+  }
+  &__slider {
+    width: 100%;
+    height: 500px;
+  }
+  &__display {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+
+    @media screen and (max-width: 647px) {
+      width: 320px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 648px) and (max-width: 977px) {
+      width: 644px;
+      margin: 0 auto;
+    }
+
+    //@include responsive(sm) {
+    //  max-width: 325px;
+    //  margin: 0 auto;
+    //}
+    //@include responsive(md) {
+    //  max-width: 653px;
+    //  margin: 0 auto;
+    //}
+  }
+  &__list {
+    display: block;
+    width: 9999px;
+    height: 500px;
+    font-size: 0;
+  }
+  &__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    height: 479px;
+    margin-right: 7px;
+    overflow: hidden;
+
+    &:hover .projects__dark {
+      display: none;
+    }
+  }
+  &__img {
+    display: block;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.45);
+  }
+  &__dark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+/* Кастомизация слайдера */
+
+#lightcase-case {
+  top: 0;
+  bottom: 0;
+  margin-top: 0 !important;
+  overflow-y: scroll;
+}
+html[data-lc-type=image] #lightcase-content .lightcase-contentInner {
+  overflow: auto !important;
+}
+#lightcase-case img {
+  display: block;
+  width: 100%;
+}
+
+/******************************/
+/*   PROJECTS  end  */
+/*********************************/
+
+
+
+/******************************/
+/*   CASES  */
+/*********************************/
+
+.cases {
+  padding-bottom: 68px;
+
+  &__header {
+    padding: 50px 0;
+    @include GMT-EB(24px, 24px);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__slider {
+    width: 100%;
+    height: 420px;
+    margin-bottom: 10px;
+
+    @include responsive(sm) {
+      height: auto;
+    }
+  }
+  &__display {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+
+    @include responsive(sm) {
+      height: auto;
+    }
+  }
+  &__list {
+    display: block;
+    width: 9999px;
+    height: 420px;
+    font-size: 0;
+
+    @include responsive(sm) {
+      height: auto;
+    }
+  }
+  &__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100vw;
+    max-width: 905px;
+    height: 420px;
+    margin-right: 85px;
+    overflow-y: hidden;
+
+    @include responsive(md) {
+      width: calc(100vw - 20px);
+      margin: 0;
+    }
+    @include responsive(sm) {
+      width: 100vw;
+      max-width: 905px;
+      height: auto;
+      margin: 0;
+    }
+  }
+  &__img-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    max-width: 326px;
+    height: 420px;
+    margin-right: 60px;
+    overflow: hidden;
+
+    @include responsive(md) {
+      margin-right: 30px;
+    }
+    @include responsive(sm) {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    //display: inline-block;
+    //vertical-align: top;
+    //max-width: 326px;
+    //margin-right: 60px;
+
+    //@include responsive(sm) {
+    //  display: block;
+    //  margin: 0 auto;
+    //  margin-bottom: 20px;
+    //}
+    //@include responsive(md) {
+    //  margin-right: 30px;
+    //}
+  }
+  &__description-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    //width: 320px;
+    max-width: 515px;
+
+    @include responsive(sm) {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+  &__description {
+    width: 100%;
+    height: 345px;
+
+    //@include responsive(md) {
+    //  width: 410px;
+    //}
+    //@include responsive(sm) {
+    //  display: block;
+    //  width: 100%;
+    //  max-width: 515px;
+    //  padding: 0 10px;
+    //}
+  }
+  &__name {
+    margin-bottom: 30px;
+    @include GMT-B(14px, 14px);
+    color: #fafcfc;
+
+    @include responsive(md) {
+      margin-bottom: 20px;
+    }
+  }
+  &__about {
+    margin-bottom: 20px;
+    @include GMT-L(14px, 14px);
+    color: #878990;
+  }
+  &__order {
+    width: 220px;
+    margin: 0 auto;
+    //padding-top: 40px;
+
+    @include responsive(sm) {
+      //display: inline-block;
+      //vertical-align: top;
+      margin-bottom: 30px;
+    }
+    @include responsive(md) {
+      //max-width: 200px;
+    }
+  }
+  &__question {
+    margin-bottom: 20px;
+
+    @include GMT-M(13px, 15px);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include responsive(sm) {
+      margin-bottom: 10px;
+    }
+  }
+  &__button {
+    width: 176px;
+    height: 34px;
+    margin: 0 auto;
+    padding-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px -2px #000;
+    background-color: #601fd0;
+    @include GMT-M(12px, 12px);
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2fc6ef;
+    }
+  }
+  &__controls {
+    width: 320px;
+    max-width: 325px;
+    font-size: 0;
+
+    @include responsive(sm) {
+      margin: 0 auto;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  &__arrow {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 41px;
+    height: 41px;
+    background: url("img/projects-arrow.png") top left no-repeat;
+    cursor: pointer;
+    opacity: 0.5;
+
+    &--right {
+      float: right;
+      transform: rotateY(180deg);
+    }
+
+    &:hover, &:active {
+      opacity: 1;
+    }
+  }
+}
+
+/******************************/
+/*   CASES  end  */
+/*********************************/
+
+
+/******************************/
+/*   CONTACT  */
+/*********************************/
+
+.contact {
+  width: 100%;
+  max-width: 823px;
+  height: 678px;
+  margin: 0 auto;
+
+  &__header {
+    margin-bottom: 120px;
+    padding-top: 50px;
+    @include GMT-EB(24px, 24px);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include responsive(sm) {
+      margin-bottom: 20px;
+    }
+  }
+  &__dont {
+    @include GMT-B(18px, 34px);
+    //color: #8346d1;
+
+    @include responsive(sm) {
+      line-height: 24px;
+    }
+  }
+  &__question {
+    margin-bottom: 20px;
+    @include GMT(14px, 20px);
+  }
+  form {
+    text-align: right;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  &__input {
+    display: block;
+    width: 320px;
+    height: 40px;
+    margin-bottom: 25px;
+    padding-left: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    @include GMT(14px, 20px);
+    color: #626262;
+    background-color: #ffffff;
+
+    @include responsive(sm) {
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+
+    &--textarea {
+      float: right;
+      width: 100%;
+      max-width: 480px;
+      height: 170px;
+      padding-top: 12px;
+
+      @include responsive(sm) {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  &__button {
+    display: block;
+    float: right;
+    width: 176px;
+    height: 34px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px -2px #000;
+    background-color: #601fd0;
+    @include GMT-M(12px, 34px);
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    @include responsive(sm) {
+      float: none;
+    }
+  }
+}
+
+/******************************/
+/*   CONTACT  end  */
+/*********************************/
+
+
+/******************************/
+/*   FOOTER  */
+/*********************************/
+
+.footer {
+  height: 375px;
+  color: #363636;
+  text-align: justify;
+  font-size: 0;
+
+  &__header {
+    padding-top: 60px;
+    padding-bottom: 47px;
+    @include GMT-EB(24px, 24px);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+    min-height: 25px;
+    margin-bottom: 10px;
+    @include GMT-M(18px, 18px);
+    text-transform: uppercase;
+
+    &--right {
+      text-align: right;
+
+      @include responsive(sm) {
+        text-align: center;
+      }
+    }
+
+    @include responsive(sm) {
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+  &__call {
+    display: inline-block;
+    //width: 136px;
+    height: 32px;
+    margin-top: 15px;
+    padding: 0 15px;
+    border-radius: 15px;
+    @include GMT-M(12px, 32px);
+    text-align: center;
+    background-color: #f8f8f8;
+    cursor: pointer;
+
+    @include responsive(sm) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__social {
+    margin-top: 30px;
+    text-align: center;
+  }
+  &__social-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 30px;
+    margin-right: 40px;
+    background: url("img/social.png") no-repeat;
+    background-position: 0 0;
+
+    &:nth-child(2) {
+      background-position: -74px 0;
+    }
+    &:nth-child(3) {
+      background-position: -162px 0;
+    }
+  }
+}
+
+/******************************/
+/*   FOOTER  end  */
+/*********************************/
+
+
+
+/******************************/
+/*   ORDER FORM  */
+/*********************************/
+
+.order-form {
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+    background-color: rgba(48, 51, 89, .75);
+
+    &--show {
+      display: block;
+    }
+  }
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 487px;
+    height: 400px;
+    margin-top: -243px;
+    margin-left: -200px;
+    background-color: #ffffff;
+
+    @media screen and (max-width: 487px) {
+      width: 90vw;
+      margin-left: -45vw;
+      left: 50%;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+    @include GMT-L(18px, 20px);
+    color: #68686c;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__form {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+  }
+  &__label {
+    display: block;
+    width: 323px;
+    margin: 20px auto 5px;
+    @include GMT-L(18px, 18px);
+    color: #68686c;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+  }
+  &__input-wrapper {
+    position: relative;
+    width: 323px;
+    height: 51px;
+    margin: 0 auto;
+    border: 1px solid #dadada;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+
+    &:after {
+      display: none;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 51px;
+      height: 51px;
+      background: url("img/form-check.png") no-repeat;
+    }
+
+    &--wrong {
+      border: 1px solid #df0024;
+
+      &:after {
+        display: block;
+        background-position: -52px 2px;
+      }
+    }
+    &--right {
+      border: 1px solid #dadada;
+
+      &:after {
+        display: block;
+        background-position: -5px 2px;
+      }
+    }
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    @include GMT(18px, 18px);
+    color: #000000;
+  }
+  &__button {
+    display: block;
+    width: 323px;
+    height: 51px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: none;
+    outline: none;
+    background-color: #601fd0;
+    @include GMT-B(18px, 51px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+  }
+}
+
+
+/******************************/
+/*   ORDER FORM  end  */
+/*********************************/
+
+
+
+
+/******************************/
+/*   PROJECT FORM  */
+/*********************************/
+
+.project-form {
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+    background-color: rgba(48, 51, 89, .75);
+
+    &--show {
+      display: block;
+    }
+  }
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 487px;
+    height: 603px;
+    margin-top: -301px;
+    margin-left: -200px;
+    background-color: #ffffff;
+
+    @media screen and (max-width: 487px) {
+      width: 90vw;
+      height: 530px;
+      margin-top: -265px;
+      margin-left: -45vw;
+      left: 50%;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+    @include GMT-L(18px, 20px);
+    color: #68686c;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__header {
+    width: 320px;
+    margin: 40px auto 10px;
+    @include GMT-B(24px, 24px);
+    color: #000000;
+
+    @media screen and (max-width: 487px) {
+      font-size: 20px;
+      width: 90%;
+    }
+
+    &--small {
+      width: 320px;
+      margin: 0 auto;
+      @include GMT(11px, 11px);
+      color: #696767;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 487px) {
+        width: 90%;
+      }
+    }
+  }
+  &__form {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+  }
+  &__label {
+    display: block;
+    width: 323px;
+    margin: 20px auto 5px;
+    @include GMT-L(18px, 18px);
+    color: #68686c;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+      margin-top: 10px;
+    }
+
+    &--file {
+      width: 323px;
+      height: 51px;
+      border: 1px solid #601fd0;
+      @include GMT(18px, 51px);
+      color: #601fd0;
+      text-transform: uppercase;
+      text-align: center;
+      cursor: pointer;
+
+      @media screen and (max-width: 487px) {
+        width: 90%;
+      }
+
+      &--right {
+        background-color: #601fd0;
+        color: #fff;
+      }
+    }
+  }
+  &__input-wrapper {
+    position: relative;
+    width: 323px;
+    height: 51px;
+    margin: 0 auto;
+    border: 1px solid #dadada;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+
+    &:after {
+      display: none;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 51px;
+      height: 51px;
+      background: url("img/form-check.png") no-repeat;
+    }
+
+    &--wrong {
+      border: 1px solid #df0024;
+
+      &:after {
+        display: block;
+        background-position: -52px 2px;
+      }
+    }
+    &--right {
+      border: 1px solid #dadada;
+
+      &:after {
+        display: block;
+        background-position: -5px 2px;
+      }
+    }
+    &--file {
+      display: none;
+    }
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    @include GMT(18px, 18px);
+    color: #000000;
+  }
+  &__button {
+    display: block;
+    width: 323px;
+    height: 51px;
+    margin: 40px auto 0;
+    border: none;
+    outline: none;
+    background-color: #601fd0;
+    @include GMT-B(18px, 51px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+/******************************/
+/*   PROJECT FORM  end  */
+/*********************************/
+
+
+
+/******************************/
+/*   CALCULATION FORM  */
+/*********************************/
+
+.calculation-form {
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+    background-color: rgba(48, 51, 89, .75);
+
+    &--show {
+      display: block;
+    }
+  }
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 487px;
+    height: 603px;
+    margin-top: -301px;
+    margin-left: -200px;
+    background-color: #ffffff;
+
+    @media screen and (max-width: 487px) {
+      width: 90vw;
+      height: 530px;
+      margin-top: -265px;
+      margin-left: -45vw;
+      left: 50%;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+    @include GMT-L(18px, 20px);
+    color: #68686c;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__header {
+    width: 323px;
+    margin: 40px auto 10px;
+    @include GMT-B(24px, 24px);
+    color: #000000;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+
+    &--small {
+      width: 323px;
+      margin: 0 auto;
+      @include GMT(11px, 11px);
+      color: #696767;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 487px) {
+        width: 90%;
+      }
+    }
+  }
+  &__form {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+  }
+  &__label {
+    display: block;
+    width: 323px;
+    margin: 20px auto 5px;
+    @include GMT-L(18px, 18px);
+    color: #68686c;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+  }
+  &__input-wrapper {
+    position: relative;
+    width: 323px;
+    height: 51px;
+    margin: 0 auto;
+    border: 1px solid #dadada;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+
+    &:after {
+      display: none;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 51px;
+      height: 51px;
+      background: url("img/form-check.png") no-repeat;
+    }
+
+    &--wrong {
+      border: 1px solid #df0024;
+
+      &:after {
+        display: block;
+        background-position: -52px 2px;
+      }
+    }
+    &--right {
+      border: 1px solid #dadada;
+
+      &:after {
+        display: block;
+        background-position: -5px 2px;
+      }
+    }
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    @include GMT(18px, 18px);
+    color: #000000;
+  }
+  &__button {
+    display: block;
+    width: 323px;
+    height: 51px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: none;
+    outline: none;
+    background-color: #601fd0;
+    @include GMT-B(18px, 51px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+/******************************/
+/*   CALCULATION FORM  end  */
+/*********************************/
+
+
+
+
+/******************************/
+/*   CALL ODER FORM  */
+/*********************************/
+
+.call-form {
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+    background-color: rgba(48, 51, 89, .75);
+
+    &--show {
+      display: block;
+    }
+  }
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 487px;
+    height: 603px;
+    margin-top: -301px;
+    margin-left: -200px;
+    background-color: #ffffff;
+
+    @media screen and (max-width: 487px) {
+      width: 90vw;
+      height: 530px;
+      margin-top: -265px;
+      margin-left: -45vw;
+      left: 50%;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+    @include GMT-L(18px, 20px);
+    color: #68686c;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__header {
+    width: 323px;
+    margin: 40px auto 10px;
+    @include GMT-B(24px, 24px);
+    color: #000000;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+
+    &--small {
+      width: 323px;
+      margin: 0 auto;
+      @include GMT(11px, 11px);
+      color: #696767;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 487px) {
+        width: 90%;
+      }
+    }
+  }
+  &__form {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+  }
+  &__label {
+    display: block;
+    width: 323px;
+    margin: 20px auto 5px;
+    @include GMT-L(18px, 18px);
+    color: #68686c;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+  }
+  &__input-wrapper {
+    position: relative;
+    width: 323px;
+    height: 51px;
+    margin: 0 auto;
+    border: 1px solid #dadada;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+    }
+
+    &:after {
+      display: none;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 51px;
+      height: 51px;
+      background: url("img/form-check.png") no-repeat;
+    }
+
+    &--wrong {
+      border: 1px solid #df0024;
+
+      &:after {
+        display: block;
+        background-position: -52px 2px;
+      }
+    }
+    &--right {
+      border: 1px solid #dadada;
+
+      &:after {
+        display: block;
+        background-position: -5px 2px;
+      }
+    }
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: none;
+    @include GMT(18px, 18px);
+    color: #000000;
+  }
+  &__button {
+    display: block;
+    width: 323px;
+    height: 51px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: none;
+    outline: none;
+    background-color: #601fd0;
+    @include GMT-B(18px, 51px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+
+    @media screen and (max-width: 487px) {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+/******************************/
+/*   CALL ORDER FORM  end  */
+/*********************************/
